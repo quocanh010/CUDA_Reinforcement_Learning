@@ -5,15 +5,12 @@ There are 512 agents with dimension 46 by 46. The idea is to take advantage of t
 ### Technical Approach
 
 Each thread associates with one agent, therefore in total we will have 512 threads. However, all agent update the same Q table later will be use as critic. Every time agent steps on mine, the enviroment will return -1, flag + 1 or 0 else. The game continues until convergence.
-
+Using wrap level paralellism and shared memory,w e able to optimize the hardware to the best performance
 
 
 ### Result
-![Screenshot](Figure_1.png)
-![Screenshot](Figure_3.png)
-## Deployment
+![Screenshot](Agents.png)
 
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
